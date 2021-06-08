@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
       bucket = "terraform-may-2021-session-remote-state2"
-      key = "session-5/dev/terraform.tfstate"
+      key = "session-5/qa/terraform.tfstate"
       region = "us-east-1"
   }
 }

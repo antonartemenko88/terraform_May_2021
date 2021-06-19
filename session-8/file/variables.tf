@@ -1,11 +1,5 @@
 # This is a file where you will be putting all your INPUT variables or PARAMETERS
 
-variable "ami" {                  # 1. Define that it is a variable, Inside "" give a name for your variable
-   type = string
-   default = "ami-0aeeebd8d2ab47354"   # Amazon Linux 2 
-   description = "This is AMI id for EC2 instance, Accepted Processor type 'x86'"
-}
-
 variable "instance_type" {
     type = string
     default = "t2.micro"
@@ -18,3 +12,10 @@ variable "env" {
     description = "This is a variable for environments"
 }
 
+variable "sg_tcp_ports" {
+    type = list(string)
+}
+
+variable "sg_tcp_ports_cidr" {
+    type = list(string)
+}

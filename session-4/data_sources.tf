@@ -1,7 +1,7 @@
 # Fetching data from existing resources
 
 data "aws_ami" "amazon_linux_2" {
-  most_recent      = true
+  most_recent      = true    # If I say true it wil give me the most updated AMI 
   owners           = ["amazon"]
 
   filter {
